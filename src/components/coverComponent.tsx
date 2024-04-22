@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import { Stack, Center, Box, Flex, Button, Heading } from "@chakra-ui/react";
+import { Stack, Center, Box, Flex, Button, Heading, Text } from "@chakra-ui/react";
 import { DownloadIcon } from '@chakra-ui/icons'
 
 export default function CoverComponent(){
@@ -10,6 +10,12 @@ export default function CoverComponent(){
                 <Heading >
                     I'm Naufal Fikri Hakim.
                 </Heading>
+            </Center>
+            <Center>
+                <Text>
+                “Code, Collaborate, Create.”
+                </Text>
+                
             </Center>
             <Center pt={5}>
                 <Flex>

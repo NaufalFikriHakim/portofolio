@@ -6,7 +6,7 @@ export default function CustomDivider() {
         <Box position='relative' padding='10'>
             <Divider borderColor="black" />
             <AbsoluteCenter bg='white' px='4'>
-                Projects
+                Projects Highlight
             </AbsoluteCenter>
         </Box>
     )
