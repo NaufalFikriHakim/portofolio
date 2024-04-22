@@ -1,9 +1,19 @@
 "use client"
 import React from "react";
-import { Stack, Center, Box, Flex, Button, Heading, Text } from "@chakra-ui/react";
-import { DownloadIcon } from '@chakra-ui/icons'
+import {
+    VStack, Center, Box, Flex, Button, Heading, Text, Modal,
+    ModalOverlay,
+    ModalContent,
+    ModalHeader,
+    ModalFooter,
+    ModalBody,
+    ModalCloseButton,
+    useDisclosure,
+} from "@chakra-ui/react";
+import { DownloadIcon, PhoneIcon, EmailIcon } from '@chakra-ui/icons'
 
-export default function CoverComponent(){
+export default function CoverComponent() {
+    const { isOpen, onOpen, onClose } = useDisclosure()
     return (
         <Box w='100%' paddingBlockStart={100}>
             <Center>
@@ -13,9 +23,9 @@ export default function CoverComponent(){
             </Center>
             <Center>
                 <Text>
-                “Code, Collaborate, Create.”
+                    “Code, Collaborate, Create.”
                 </Text>
-                
+
             </Center>
             <Center pt={5}>
                 <Flex>
@@ -35,12 +45,50 @@ export default function CoverComponent(){
                     <Button colorScheme='gray' rightIcon={<DownloadIcon />}>
                         Resume
                     </Button>
-                    <Button colorScheme='gray'>
+                    <Button colorScheme='gray' onClick={onOpen}>
                         Contact
                     </Button>
                 </Flex>
 
             </Center>
+            <Modal isOpen={isOpen} onClose={onClose}>
+                <ModalOverlay />
+                <ModalContent>
+                    <ModalHeader>Contact Info</ModalHeader>
+                    <ModalCloseButton />
+                    <ModalBody>
+                        <VStack>
+                            <Flex direction="row">
+                                <PhoneIcon boxSize={6}></PhoneIcon>
+                                <Text ml={1}> +6281288827590</Text>
+                            </Flex>
+                            <Flex direction="row">
+                                <EmailIcon boxSize={6}></EmailIcon>
+                                <Text ml={1}> naufalfikri2903@gmail.com</Text>
+                            </Flex>
+                            <Flex direction="row">
+                                <img src="/instagram.svg" width="40px" height="40px" alt="" />
+                                <Text ml={1}> @nfalfikri</Text>
+                            </Flex>
+                            <Flex direction="row">
+                                <img src="/line.svg" width="40px" height="40px" alt="" />
+                                <Text ml={1}> @naufal2903</Text>
+                            </Flex>
+
+                        </VStack>
+
+
+
+
+                    </ModalBody>
+
+                    <ModalFooter>
+                        <Button colorScheme='gray' mr={3} onClick={onClose}>
+                            Close
+                        </Button>
+                    </ModalFooter>
+                </ModalContent>
+            </Modal>
         </Box>
     )
 }
