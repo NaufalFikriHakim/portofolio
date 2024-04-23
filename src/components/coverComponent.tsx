@@ -14,6 +14,7 @@ import { DownloadIcon, PhoneIcon, EmailIcon } from '@chakra-ui/icons'
 
 export default function CoverComponent() {
     const { isOpen, onOpen, onClose } = useDisclosure()
+
     return (
         <Box w='100%' paddingBlockStart={100}>
             <Center>
@@ -43,7 +44,7 @@ export default function CoverComponent() {
             <Center pt={5}>
                 <Flex gap="2rem">
                     <Button colorScheme='gray' rightIcon={<DownloadIcon />}>
-                        Resume
+                        <a href="/resume.pdf">Resume</a>
                     </Button>
                     <Button colorScheme='gray' onClick={onOpen}>
                         Contact
