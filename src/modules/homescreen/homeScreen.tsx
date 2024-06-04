@@ -85,7 +85,7 @@ export default function HomeScreenModule() {
                                             </ListItem>
                                         </OrderedList>
                                     </ListItem>
-                                    <ListItem><Text as="b">Repository:</Text> Classified</ListItem>
+                                    <ListItem><Text as="b">Link:</Text> http://lontar-digital-mti.cs.ui.ac.id/ (Can only be accesed using HTTP)</ListItem>
                                     <ListItem><Text as="b">Tech Used:</Text> NextJS, ChakraUI, Tailwind CSS, SpringBoot, Jest, PostgreSQL, Elastisearch, Prometheus, Graphana, SonarCloud, Git, Linear </ListItem>
                                 </UnorderedList></GridItem>
                             </Grid>
