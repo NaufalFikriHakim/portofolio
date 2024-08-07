@@ -5,13 +5,15 @@ import CoverComponent from "@/components/coverComponent";
 import CustomDivider from "@/components/divider";
 import { Card, CardHeader, CardBody, CardFooter, List, ListItem, ListIcon, OrderedList, UnorderedList, AbsoluteCenter } from '@chakra-ui/react'
 import Carousel from 'react-bootstrap/Carousel';
+import NavBar from "@/components/navBar";
 
 
 
 export default function HomeScreenModule() {
     return (
+        
         <Flex direction="column" w="100%" gap={2} mb={3} justify="center">
-
+            <NavBar></NavBar>
             <CoverComponent />
             <Box position='relative' padding='10'>
                 <Divider borderColor="black" />
@@ -21,25 +23,29 @@ export default function HomeScreenModule() {
             </Box>
             <Center>
 <Flex justify="center" wrap="wrap" gap="0.5rem" w="80%">
-                <div style={{ display: "inline-block", border: "1px solid gray", borderRadius: "5px", backgroundColor: "#0F1B38", fontWeight: "bold", color: "white", padding: "2px" }}>HTML & CSS</div>
-                <div style={{ display: "inline-block", border: "1px solid gray", borderRadius: "5px", backgroundColor: "#0F1B38", fontWeight: "bold", color: "white", padding: "2px" }}>JavaScript</div>
-                <div style={{ display: "inline-block", border: "1px solid gray", borderRadius: "5px", backgroundColor: "#0F1B38", fontWeight: "bold", color: "white", padding: "2px" }}>TypeScript</div>
-                <div style={{ display: "inline-block", border: "1px solid gray", borderRadius: "5px", backgroundColor: "#0F1B38", fontWeight: "bold", color: "white", padding: "2px" }}>Java</div>
-                <div style={{ display: "inline-block", border: "1px solid gray", borderRadius: "5px", backgroundColor: "#0F1B38", fontWeight: "bold", color: "white", padding: "2px" }}>Python</div>
-                <div style={{ display: "inline-block", border: "1px solid gray", borderRadius: "5px", backgroundColor: "#0F1B38", fontWeight: "bold", color: "white", padding: "2px" }}>Dart</div>
-                <div style={{ display: "inline-block", border: "1px solid gray", borderRadius: "5px", backgroundColor: "#0F1B38", fontWeight: "bold", color: "white", padding: "2px" }}>Kotlin</div>
-                <div style={{ display: "inline-block", border: "1px solid gray", borderRadius: "5px", backgroundColor: "#0F1B38", fontWeight: "bold", color: "white", padding: "2px" }}>SQL</div>
-                <div style={{ display: "inline-block", border: "1px solid gray", borderRadius: "5px", backgroundColor: "#0F1B38", fontWeight: "bold", color: "white", padding: "2px" }}>NodeJS</div>
-                <div style={{ display: "inline-block", border: "1px solid gray", borderRadius: "5px", backgroundColor: "#0F1B38", fontWeight: "bold", color: "white", padding: "2px" }}>ReactJS</div>
-                <div style={{ display: "inline-block", border: "1px solid gray", borderRadius: "5px", backgroundColor: "#0F1B38", fontWeight: "bold", color: "white", padding: "2px" }}>NextJS</div>
-                <div style={{ display: "inline-block", border: "1px solid gray", borderRadius: "5px", backgroundColor: "#0F1B38", fontWeight: "bold", color: "white", padding: "2px" }}>ExpressJS</div>
-                <div style={{ display: "inline-block", border: "1px solid gray", borderRadius: "5px", backgroundColor: "#0F1B38", fontWeight: "bold", color: "white", padding: "2px" }}>Spring Boot</div>
-                <div style={{ display: "inline-block", border: "1px solid gray", borderRadius: "5px", backgroundColor: "#0F1B38", fontWeight: "bold", color: "white", padding: "2px" }}>Django</div>
-                <div style={{ display: "inline-block", border: "1px solid gray", borderRadius: "5px", backgroundColor: "#0F1B38", fontWeight: "bold", color: "white", padding: "2px" }}>Flutter</div>
-                <div style={{ display: "inline-block", border: "1px solid gray", borderRadius: "5px", backgroundColor: "#0F1B38", fontWeight: "bold", color: "white", padding: "2px" }}>PostgreSQL</div>
-                <div style={{ display: "inline-block", border: "1px solid gray", borderRadius: "5px", backgroundColor: "#0F1B38", fontWeight: "bold", color: "white", padding: "2px" }}>Git</div>
-                <div style={{ display: "inline-block", border: "1px solid gray", borderRadius: "5px", backgroundColor: "#0F1B38", fontWeight: "bold", color: "white", padding: "2px" }}>Docker</div>
-                <div style={{ display: "inline-block", border: "1px solid gray", borderRadius: "5px", backgroundColor: "#0F1B38", fontWeight: "bold", color: "white", padding: "2px" }}>GCP</div>
+    <img src="html.png" width="60px" alt="" />
+    <img src="css.png" width="60px" alt="" />
+    <img src="js.svg" width="60px" alt="" />
+    <img src="ts.png" width="60px" alt="" />
+    <img src="python.png" width="60px" alt="" />
+    <img src="php.png" width="60px" alt="" />
+    <img src="go.png" width="60px" alt="" />
+    <img src="dart.png" width="60px" alt="" />
+    <img src="kotlin.png" width="60px" alt="" />
+    <img src="node.png" width="60px" alt="" />
+    <img src="react.png" width="60px" alt="" />
+    <img src="next.png" width="60px" alt="" />
+    <img src="express.png" width="60px" alt="" />
+    <img src="spring.png" width="60px" alt="" />
+    <img src="django.png" width="60px" alt="" />
+    <img src="laravel.png" width="60px" alt="" />
+    <img src="flutter.png" width="60px" alt="" />
+    <img src="postgre.png" width="60px" alt="" />
+    <img src="git.png" width="60px" alt="" />
+    <img src="docker.png" width="60px" alt="" />
+    <img src="gcp.png" width="60px" alt="" />
+    <img src="aws.png" width="60px" alt="" />
+    
             </Flex>
             </Center>
             
