@@ -3,7 +3,7 @@ import { Box, Center, Flex, Spacer, HStack } from "@chakra-ui/react";
 
 export default function NavBar() {
     return (
-        <Box w="100%" borderBottom="2px" borderColor="black" height="62px" paddingRight="50px" pos="fixed" backdropFilter="auto" backdropBlur="8px" zIndex="5">
+        <Box w="100%" borderBottom="2px" borderColor="black" height="62px" paddingRight="50px"  backdropFilter="auto" pos="fixed" backdropBlur="8px" zIndex={5}>
             <Flex align="center" >
                 <Box padding="10px">
                 <img src="/code-icon.svg" alt="logo" height="50px" width="50px" />
